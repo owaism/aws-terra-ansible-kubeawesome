@@ -29,5 +29,5 @@ TF_VAR_public_key_base64| Base64 encoded Public Key of the SSH Key pair to use t
 TF_VAR_backend_s3_bucket_name | Bucket name of the S3 bucket to use as Terraform Backend
 TF_VAR_aws_access_key | AWS Access Key
 TF_VAR_aws_secret_key | AWS Access Secret
-TF_VAR_aws_region | AWS Region. This is required only for terraform backend initialization. The actual AWS region for the build is picked up using the configs driven by `build_env` (see [configuration file](infrastructure/configs/ci/network.tfvars). The regions must match. This unfortunate redundancy is because of the way terraform backened is initialized.
+TF_VAR_aws_region | AWS Region. This is required only for terraform backend initialization. The actual AWS region for the build is picked up using the configs driven by `build_env` (see [configuration file](infrastructure/configs/ci/network.tfvars)). The regions must match. This unfortunate redundancy is because of the way terraform backened is initialized.
 build_env | Provide the environment that is being built. This is what is used to pick up appropriate configurations. For starters you can use 'ci' as the build environment.

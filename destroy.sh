@@ -4,4 +4,7 @@
 
 cd ./infrastructure
 
-terraform destroy -auto-approve -var-file=configs/us-east-1/network.tfvars -var-file=configs/us-east-1/security.tfvars -var-file=configs/us-east-1/vms.tfvars
+terraform destroy -auto-approve \
+	-var-file=configs/$build_env/network.tfvars \
+	-var-file=configs/$build_env/security.tfvars \
+	-var-file=configs/$build_env/vms.tfvars

@@ -13,4 +13,7 @@ terraform init \
 	-backend-config="key=owais_terra_kubeawesome.tf"
 
 
-terraform apply -auto-approve -var-file=configs/us-east-1/network.tfvars -var-file=configs/us-east-1/security.tfvars -var-file=configs/us-east-1/vms.tfvars
+terraform apply \
+	-var-file=configs/$build_env/network.tfvars \
+	-var-file=configs/$build_env/security.tfvars \
+	-var-file=configs/$build_env/vms.tfvars

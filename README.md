@@ -1,4 +1,4 @@
-Build Status: [![Build Status](https://travis-ci.com/owaism/aws-terra-ansible-kubeawesome.svg?branch=owais-dev)](https://travis-ci.com/owaism/aws-terra-ansible-kubeawesome)
+[![Build Status](https://travis-ci.com/owaism/aws-terra-ansible-kubeawesome.svg?branch=owais-dev)](https://travis-ci.com/owaism/aws-terra-ansible-kubeawesome)
 
 
 ## Pre-Requisites
